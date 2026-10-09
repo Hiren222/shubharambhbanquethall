@@ -310,54 +310,66 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#FDFBF7] text-stone-800 font-sans antialiased selection:bg-[#F2E4B8] selection:text-[#34080F]">
       {/* TOP ANNOUNCEMENT BAR */}
-      <div className="bg-[#220409] text-stone-300 text-xs py-2.5 px-4 border-b border-[#4A0E17]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#D4AF37]/25 text-[#F2E4B8] font-semibold text-[11px] border border-[#D4AF37]/40 shadow-sm">
-              <Star className="w-3.5 h-3.5 fill-[#D4AF37] text-[#D4AF37]" />
-              4.1 ★ · 399 Google Reviews
+      <div className="bg-[#220409] text-stone-300 text-xs py-1.5 sm:py-2.5 px-3 sm:px-4 border-b border-[#4A0E17]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          {/* Rating Badge / Address */}
+          <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#D4AF37]/25 text-[#F2E4B8] font-semibold text-[10px] sm:text-[11px] border border-[#D4AF37]/40 shadow-xs whitespace-nowrap shrink-0">
+              <Star className="w-3 h-3 fill-[#D4AF37] text-[#D4AF37]" />
+              <span>4.1 ★</span>
+              <span className="hidden xs:inline">· 399 Reviews</span>
             </span>
-            <span className="text-stone-300 hidden md:inline">
+            <span className="text-stone-300 text-[11px] truncate hidden md:inline">
               Just beside Thane Railway Station East, Maharashtra 400602
             </span>
+            <span className="text-stone-300 text-[11px] truncate hidden sm:inline md:hidden">
+              Beside Thane Rly Station East
+            </span>
           </div>
-          <div className="flex items-center gap-4">
+
+          {/* Contact actions on announcement bar */}
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0 text-[11px] sm:text-xs font-medium">
             <a
               href="tel:09819498760"
-              className="flex items-center gap-1.5 text-stone-200 hover:text-[#D4AF37] transition-colors font-medium"
+              className="flex items-center gap-1 text-stone-200 hover:text-[#D4AF37] transition-colors py-0.5"
+              aria-label="Call 098194 98760"
             >
-              <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Call: 098194 98760</span>
+              <Phone className="w-3 h-3 text-[#D4AF37]" />
+              <span className="hidden sm:inline">098194 98760</span>
+              <span className="sm:hidden">Call</span>
             </a>
             <span className="text-stone-600">|</span>
             <a
               href={`https://wa.me/919819498760?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
+              className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors py-0.5"
+              aria-label="WhatsApp +91 98194 98760"
             >
-              <MessageSquare className="w-3.5 h-3.5" />
-              <span>WhatsApp: +91 98194 98760</span>
+              <MessageSquare className="w-3 h-3" />
+              <span className="hidden sm:inline">WhatsApp</span>
+              <span className="sm:hidden">Chat</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* STICKY NAVBAR - ONLY REQUESTED LINKS */}
+      {/* STICKY NAVBAR */}
       <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
-            <a href="#hero" id="nav-logo" className="flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-full bg-[#34080F] text-[#D4AF37] flex items-center justify-center border border-[#D4AF37]/40 shadow-inner group-hover:scale-105 transition-transform">
-                <Sparkles className="w-5 h-5 text-[#D4AF37]" />
+            <a href="#hero" id="nav-logo" className="flex items-center gap-2 sm:gap-3 group min-w-0 pr-2">
+              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#34080F] text-[#D4AF37] flex items-center justify-center border border-[#D4AF37]/40 shadow-inner group-hover:scale-105 transition-transform shrink-0">
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-[#D4AF37]" />
               </div>
-              <div>
-                <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#220409] block leading-tight">
+              <div className="min-w-0">
+                <span className="font-serif text-base sm:text-2xl font-bold tracking-tight text-[#220409] block leading-tight truncate">
                   Shubharambh Banquet Hall
                 </span>
-                <span className="text-[10px] tracking-widest uppercase text-[#947219] font-medium block">
-                  Beside Thane Railway Station East · Thane 400602
+                <span className="text-[9px] sm:text-[10px] tracking-wider uppercase text-[#947219] font-medium block truncate">
+                  <span className="sm:hidden">Thane Rly Station East</span>
+                  <span className="hidden sm:inline">Beside Thane Railway Station East · Thane 400602</span>
                 </span>
               </div>
             </a>
@@ -378,12 +390,22 @@ export default function HomePage() {
               </a>
             </nav>
 
-            {/* Actions: Call & Book Button */}
-            <div className="hidden sm:flex items-center gap-3">
+            {/* Actions: Call & Book Button & Mobile Toggle */}
+            <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+              {/* Quick Call Icon for mobile */}
+              <a
+                href="tel:09819498760"
+                id="mobile-quick-call"
+                className="sm:hidden p-2 rounded-full text-[#4A0E17] bg-[#F9F4DF] hover:bg-[#F2E4B8] border border-[#EAD38F] transition-all"
+                aria-label="Call Shubharambh Banquet Hall"
+              >
+                <Phone className="w-4 h-4 text-[#947219]" />
+              </a>
+
               <a
                 href="tel:09819498760"
                 id="nav-call-btn"
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#4A0E17] bg-[#F9F4DF] hover:bg-[#F2E4B8] border border-[#EAD38F] transition-all shadow-xs"
+                className="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#4A0E17] bg-[#F9F4DF] hover:bg-[#F2E4B8] border border-[#EAD38F] transition-all shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5 text-[#947219]" />
                 <span>098194 98760</span>
@@ -392,23 +414,23 @@ export default function HomePage() {
               <a
                 href="#booking"
                 id="nav-book-btn"
-                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-[#4A0E17] hover:bg-[#34080F] shadow-md hover:shadow-lg transition-all border border-[#D4AF37]/30"
+                className="hidden md:inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#4A0E17] hover:bg-[#34080F] shadow-md hover:shadow-lg transition-all border border-[#D4AF37]/30"
               >
-                Book Your Date
+                Book Date
               </a>
-            </div>
 
-            {/* Mobile Hamburger */}
-            <div className="lg:hidden flex items-center">
-              <button
-                type="button"
-                id="mobile-menu-toggle"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-lg text-stone-700 hover:text-[#4A0E17] hover:bg-stone-100 transition-colors"
-                aria-label="Toggle navigation"
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
+              {/* Mobile Hamburger */}
+              <div className="lg:hidden flex items-center">
+                <button
+                  type="button"
+                  id="mobile-menu-toggle"
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="p-1.5 sm:p-2 rounded-lg text-stone-700 hover:text-[#4A0E17] hover:bg-stone-100 transition-colors"
+                  aria-label="Toggle navigation"
+                >
+                  {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -474,17 +496,17 @@ export default function HomePage() {
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#220409]/92 via-stone-950/85 to-[#220409]/95" />
         <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent z-20 opacity-75" />
 
-        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 text-center">
           {/* Rating Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/60 border border-[#D4AF37]/60 backdrop-blur-md mb-6 shadow-xl">
-            <div className="flex text-[#D4AF37]">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-black/60 border border-[#D4AF37]/60 backdrop-blur-md mb-4 sm:mb-6 shadow-xl max-w-full">
+            <div className="flex text-[#D4AF37] shrink-0">
               {[...Array(4)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-[#D4AF37] text-[#D4AF37]" />
+                <Star key={i} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-[#D4AF37] text-[#D4AF37]" />
               ))}
-              <Star className="w-3.5 h-3.5 fill-[#D4AF37]/40 text-[#D4AF37]" />
+              <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-[#D4AF37]/40 text-[#D4AF37]" />
             </div>
-            <span className="text-xs sm:text-sm font-bold text-[#F2E4B8] tracking-wide">
-              4.1 ★ · 399 Google Reviews
+            <span className="text-[11px] sm:text-sm font-bold text-[#F2E4B8] tracking-wide whitespace-nowrap">
+              4.1 ★ <span className="hidden xs:inline">· 399 Google Reviews</span><span className="xs:hidden">· 399 Reviews</span>
             </span>
             <span className="text-stone-400 text-xs hidden sm:inline">|</span>
             <span className="text-xs font-medium text-stone-200 hidden sm:inline">
@@ -492,11 +514,11 @@ export default function HomePage() {
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-5 leading-tight drop-shadow-md">
+          <h1 className="font-serif text-3xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-3 sm:mb-5 leading-tight drop-shadow-md">
             Shubharambh Banquet Hall
           </h1>
 
-          <p className="font-serif italic text-xl sm:text-2xl md:text-3xl text-[#F2E4B8] font-light mb-6 drop-shadow">
+          <p className="font-serif italic text-base sm:text-2xl md:text-3xl text-[#F2E4B8] font-light mb-4 sm:mb-6 drop-shadow">
             &ldquo;Where Celebrations Begin with Grace &amp; Grandeur&rdquo;
           </p>
 

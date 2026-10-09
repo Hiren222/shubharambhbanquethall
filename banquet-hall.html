@@ -83,23 +83,25 @@
 <body class="min-h-screen bg-[#FDFBF7] text-stone-800 antialiased selection:bg-[#F2E4B8] selection:text-[#34080F]">
 
   <!-- TOP ANNOUNCEMENT BAR -->
-  <div class="bg-[#220409] text-stone-300 text-xs py-2 px-4 border-b border-[#4A0E17]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#D4AF37]/25 text-[#F2E4B8] font-semibold text-[11px] border border-[#D4AF37]/40 shadow-sm">
-          ★ 4.1 · 399 Google Reviews
+  <div class="bg-[#220409] text-stone-300 text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-[#4A0E17]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5 sm:gap-2 min-w-0">
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#D4AF37]/25 text-[#F2E4B8] font-semibold text-[10px] sm:text-[11px] border border-[#D4AF37]/40 shadow-sm whitespace-nowrap shrink-0">
+          ★ 4.1 <span class="hidden xs:inline">· 399 Reviews</span>
         </span>
-        <span class="text-stone-300 hidden md:inline">
+        <span class="text-stone-300 text-[11px] truncate hidden md:inline">
           Just beside Thane Railway Station East, Maharashtra 400602
         </span>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="tel:09819498760" class="flex items-center gap-1.5 text-stone-200 hover:text-[#D4AF37] transition-colors font-medium">
-          <span>Call: 098194 98760</span>
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0 text-[11px] sm:text-xs">
+        <a href="tel:09819498760" class="flex items-center gap-1 text-stone-200 hover:text-[#D4AF37] transition-colors font-medium">
+          <span class="hidden sm:inline">098194 98760</span>
+          <span class="sm:hidden">Call</span>
         </a>
         <span class="text-stone-600">|</span>
         <a href="https://wa.me/919819498760?text=Hello%20Shubharambh%20Banquet%20Hall%2C%20I%20would%20like%20to%20inquire%20about%20booking%20the%20hall." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
-          WhatsApp: +91 98194 98760
+          <span class="hidden sm:inline">WhatsApp</span>
+          <span class="sm:hidden">Chat</span>
         </a>
       </div>
     </div>
@@ -107,18 +109,19 @@
 
   <!-- HEADER NAVBAR -->
   <header class="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="#hero" class="flex items-center gap-3">
-          <div class="w-11 h-11 rounded-full bg-[#34080F] text-[#D4AF37] flex items-center justify-center border border-[#D4AF37]/40 shadow-inner">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="#hero" class="flex items-center gap-2 sm:gap-3 min-w-0 pr-2">
+          <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#34080F] text-[#D4AF37] flex items-center justify-center border border-[#D4AF37]/40 shadow-inner shrink-0 text-sm sm:text-base">
             ✦
           </div>
-          <div>
-            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#220409] block leading-tight">
+          <div class="min-w-0">
+            <span class="font-serif text-base sm:text-2xl font-bold tracking-tight text-[#220409] block leading-tight truncate">
               Shubharambh Banquet Hall
             </span>
-            <span class="text-[10px] tracking-widest uppercase text-[#947219] font-medium block">
-              Beside Thane Railway Station East · Thane 400602
+            <span class="text-[9px] sm:text-[10px] tracking-wider uppercase text-[#947219] font-medium block truncate">
+              <span class="sm:hidden">Thane Rly Station East</span>
+              <span class="hidden sm:inline">Beside Thane Railway Station East · Thane 400602</span>
             </span>
           </div>
         </a>
@@ -130,9 +133,9 @@
           <a href="#location" class="hover:text-[#4A0E17] transition-colors py-1">Location</a>
         </nav>
 
-        <div class="flex items-center gap-3">
-          <a href="tel:09819498760" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#4A0E17] bg-[#F9F4DF] hover:bg-[#F2E4B8] border border-[#EAD38F] transition-all shadow-sm">
-            <span>098194 98760</span>
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <a href="tel:09819498760" class="inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-semibold text-[#4A0E17] bg-[#F9F4DF] hover:bg-[#F2E4B8] border border-[#EAD38F] transition-all shadow-sm">
+            <span>Call Now</span>
           </a>
           <a href="#booking" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-[#4A0E17] hover:bg-[#34080F] shadow-md transition-all border border-[#D4AF37]/30">
             Book Your Date
