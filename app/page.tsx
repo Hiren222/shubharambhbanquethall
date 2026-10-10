@@ -192,9 +192,9 @@ const REAL_REVIEWS = [
     badge: 'Local Guide · 90 reviews · 332 photos',
     time: '6 years ago',
     rating: 4,
-    tag: 'Station East & Huge Hall',
+    tag: 'Station West & Platform 1',
     quote:
-      'Just beside Thane Railway Station East. Easily accessible from Railway. Little difficult to access by road. Quite huge hall. Nicely maintained.',
+      'Just beside Thane Railway Station West (Platform No. 1). Easily accessible from Railway. Little difficult to access by road. Quite huge hall. Nicely maintained.',
     ownerResponse:
       'dear Pradip thanks for ur reviews, will do needful to get access easily, fans are high performing nd we can not silence them. Bathrooms nd toilet will try to keep them clean, thanks dear',
     likes: '6 upvotes',
@@ -304,7 +304,7 @@ export default function HomePage() {
   const todayStr = new Date().toISOString().split('T')[0];
 
   const whatsappMessage = encodeURIComponent(
-    'Hello Shubharambh Banquet Hall, I would like to inquire about booking the hall for an event near Thane Railway Station East.'
+    'Hello Shubharambh Banquet Hall, I would like to inquire about booking the hall for an event near Thane Railway Station West (Platform No. 1).'
   );
 
   return (
@@ -320,10 +320,10 @@ export default function HomePage() {
               <span className="hidden xs:inline">· 399 Reviews</span>
             </span>
             <span className="text-stone-300 text-[11px] truncate hidden md:inline">
-              Just beside Thane Railway Station East, Maharashtra 400602
+              Just beside Thane Railway Station West (Platform No. 1), Maharashtra 400602
             </span>
             <span className="text-stone-300 text-[11px] truncate hidden sm:inline md:hidden">
-              Beside Thane Rly Station East
+              Beside Thane Rly Station West · Platform No. 1
             </span>
           </div>
 
@@ -368,8 +368,8 @@ export default function HomePage() {
                   Shubharambh Banquet Hall
                 </span>
                 <span className="text-[9px] sm:text-[10px] tracking-wider uppercase text-[#947219] font-medium block truncate">
-                  <span className="sm:hidden">Thane Rly Station East</span>
-                  <span className="hidden sm:inline">Beside Thane Railway Station East · Thane 400602</span>
+                  <span className="sm:hidden">Thane Rly Station West · Platform 1</span>
+                  <span className="hidden sm:inline">Beside Thane Railway Station West (Platform No. 1) · Thane 400602</span>
                 </span>
               </div>
             </a>
@@ -510,7 +510,7 @@ export default function HomePage() {
             </span>
             <span className="text-stone-400 text-xs hidden sm:inline">|</span>
             <span className="text-xs font-medium text-stone-200 hidden sm:inline">
-              Beside Thane Railway Station East
+              Beside Thane Railway Station West · Platform No. 1
             </span>
           </div>
 
@@ -523,7 +523,7 @@ export default function HomePage() {
           </p>
 
           <p className="max-w-3xl mx-auto text-base sm:text-lg text-stone-200 font-light mb-10 leading-relaxed">
-            Located just beside Thane Railway Station East, Shubharambh Banquet Hall offers spacious air-conditioned interiors, elegant decor, and comprehensive event &amp; catering facilities for weddings, engagements, birthday parties, receptions, and corporate galas.
+            Located right beside Thane Railway Station West (Platform No. 1), Shubharambh Banquet Hall offers spacious air-conditioned interiors, elegant decor, and comprehensive event &amp; catering facilities for weddings, engagements, birthday parties, receptions, and corporate galas.
           </p>
 
           {/* Primary Action Buttons */}
@@ -566,7 +566,7 @@ export default function HomePage() {
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 border border-white/10">
               <span className="block text-[#F2E4B8] font-serif text-xl sm:text-2xl font-bold">Thane Rly Stn</span>
-              <span className="text-stone-300 font-medium">Beside Station East</span>
+              <span className="text-stone-300 font-medium">Station West · Platform 1</span>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 border border-white/10">
               <span className="block text-[#F2E4B8] font-serif text-xl sm:text-2xl font-bold">Quite Huge Hall</span>
@@ -632,7 +632,7 @@ export default function HomePage() {
 
             <div className="space-y-4 text-stone-600 text-base sm:text-lg leading-relaxed">
               <p>
-                <strong className="text-stone-900 font-semibold">Shubharambh Banquet Hall</strong> is a prominent, highly sought-after event venue located right <strong className="text-[#4A0E17] font-semibold">beside Thane Railway Station East</strong> (Maharashtra 400602 / Plus Code: 5XPF+GM).
+                <strong className="text-stone-900 font-semibold">Shubharambh Banquet Hall</strong> is a prominent, highly sought-after event venue located right <strong className="text-[#4A0E17] font-semibold">beside Thane Railway Station West, Platform No. 1</strong> (Maharashtra 400602 / Plus Code: 5XPF+GM).
               </p>
               <p>
                 Celebrated across 399 Google reviews for its <strong className="text-stone-900 font-semibold">quite huge hall and spacious interiors</strong>, the venue features elegant, well-maintained decor, dependable high-performing air conditioning, and complete event facilities tailored for family celebrations and formal gatherings.
@@ -650,7 +650,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-stone-900 text-sm">Train Accessibility</h4>
-                  <p className="text-xs text-stone-500 mt-0.5">Steps from Thane Station East</p>
+                  <p className="text-xs text-stone-500 mt-0.5">Steps from Station West (Platform 1)</p>
                 </div>
               </div>
 
@@ -689,7 +689,7 @@ export default function HomePage() {
             <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm flex items-start gap-3">
               <AlertCircle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
               <div>
-                <strong className="font-bold">Guest Travel &amp; Transit Tip:</strong> Because the hall is situated right beside Thane Railway Station East, rail and public transit access is exceptionally fast and seamless. Guests traveling by train can walk in directly. For road travelers, hiring auto-rickshaws or taxis directly to Thane East station is recommended.
+                <strong className="font-bold">Guest Travel &amp; Transit Tip:</strong> Because the hall is situated right beside Thane Railway Station West at Platform No. 1, rail and public transit access is exceptionally fast and seamless. Guests traveling by train can walk in directly from Platform 1. For road travelers, reaching Thane West station is easy via auto-rickshaws or taxis.
               </div>
             </div>
 
@@ -716,7 +716,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#947219] block">
-                      Thane Railway Station East
+                      Thane Railway Station West · Platform 1
                     </span>
                     <h3 className="font-serif text-lg font-bold text-[#220409]">
                       Shubharambh Banquet Hall
@@ -876,7 +876,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <div className="inline-flex flex-wrap items-center justify-center gap-4 p-4 rounded-2xl bg-white border border-[#D4AF37]/40 shadow-sm">
               <span className="text-sm font-medium text-stone-700">
-                Planning an event near Thane Railway Station East?
+                Planning an event near Thane Railway Station West (Platform No. 1)?
               </span>
               <a
                 href="tel:09819498760"
@@ -1101,7 +1101,7 @@ export default function HomePage() {
                 </div>
                 <span>4.1 ★ · 399 Google Reviews</span>
                 <span className="text-stone-300">|</span>
-                <span className="text-stone-600 font-medium">Beside Thane Rly Stn East</span>
+                <span className="text-stone-600 font-medium">Beside Thane Rly Stn West · Platform 1</span>
               </div>
 
               <p className="text-stone-600 text-sm sm:text-base leading-relaxed mt-2">
@@ -1195,7 +1195,7 @@ export default function HomePage() {
                 Plan Your Event at Shubharambh
               </h2>
               <p className="text-stone-600 text-sm sm:text-base">
-                Contact our banquet team for date availability, package pricing, catering details, and a personal venue walkthrough beside Thane Railway Station East.
+                Contact our banquet team for date availability, package pricing, catering details, and a personal venue walkthrough beside Thane Railway Station West, Platform No. 1.
               </p>
             </div>
 
@@ -1405,11 +1405,11 @@ export default function HomePage() {
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#220409] leading-tight">
-              Located Right Beside Thane Railway Station East
+              Located Right Beside Thane Railway Station West (Platform No. 1)
             </h2>
 
             <p className="text-stone-600 text-base leading-relaxed">
-              Enjoy unmatched transit accessibility. Located just steps from Thane Railway Station East, your guests can reach the venue smoothly from anywhere along Central and Trans-Harbour lines.
+              Enjoy unmatched transit accessibility. Located just steps from Thane Railway Station West at Platform No. 1, your guests can reach the venue smoothly from anywhere along Central and Trans-Harbour lines.
             </p>
 
             <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
@@ -1420,10 +1420,10 @@ export default function HomePage() {
                 <div>
                   <h4 className="font-bold text-stone-900 text-sm uppercase tracking-wide">Venue Address</h4>
                   <p className="text-stone-700 text-base mt-0.5 font-medium">
-                    Thane Rly Stn, Maharashtra 400602
+                    Thane Rly Stn, Platform No. 1, Thane West, Maharashtra 400602
                   </p>
                   <p className="text-xs text-[#947219] mt-1 font-semibold">
-                    Beside Thane Railway Station East · Plus code: 5XPF+GM Thane, Maharashtra
+                    Beside Thane Railway Station West (Platform No. 1) · Plus code: 5XPF+GM Thane, Maharashtra
                   </p>
                 </div>
               </div>
@@ -1472,7 +1472,7 @@ export default function HomePage() {
 
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Shubharambh+Banquet+Hall+Thane+Railway+Station+East+Maharashtra+400602"
+                href="https://www.google.com/maps/search/?api=1&query=Shubharambh+Banquet+Hall+Thane+Railway+Station+West+Platform+1+Maharashtra+400602"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="get-directions-btn"
@@ -1497,15 +1497,15 @@ export default function HomePage() {
             <div className="w-full h-[400px] sm:h-[460px] rounded-3xl overflow-hidden shadow-xl border-2 border-stone-200 relative bg-stone-100">
               <iframe
                 id="google-map-iframe"
-                title="Shubharambh Banquet Hall Location Map - Beside Thane Railway Station East"
+                title="Shubharambh Banquet Hall Location Map - Beside Thane Railway Station West (Platform No. 1)"
                 className="w-full h-full border-0"
-                src="https://maps.google.com/maps?q=Shubharambh%20Banquet%20Hall%2C%20Thane%20Railway%20Station%20East%2C%20Thane%2C%20Maharashtra%20400602&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Shubharambh%20Banquet%20Hall%2C%20Thane%20Railway%20Station%20West%2C%20Platform%20No%201%2C%20Thane%2C%20Maharashtra%20400602&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-200 shadow text-xs font-bold text-[#220409]">
-                📍 Beside Thane Railway Station East, 400602
+                📍 Beside Thane Railway Station West (Platform 1), 400602
               </div>
             </div>
           </div>
@@ -1526,7 +1526,7 @@ export default function HomePage() {
                 </span>
               </div>
               <p className="text-stone-400 text-sm leading-relaxed mb-6">
-                A popular event venue located just beside Thane Railway Station East. Praised for its spacious interiors, well-maintained decor, and supreme train connectivity for weddings, engagements, birthday parties, receptions, and corporate events.
+                A popular event venue located just beside Thane Railway Station West (Platform No. 1). Praised for its spacious interiors, well-maintained decor, and supreme train connectivity for weddings, engagements, birthday parties, receptions, and corporate events.
               </p>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-[#D4AF37]">
                 <Star className="w-3.5 h-3.5 fill-[#D4AF37]" />
@@ -1606,7 +1606,7 @@ export default function HomePage() {
                     <MapPin className="w-4 h-4" />
                   </span>
                   <span className="text-xs leading-relaxed">
-                    Beside Thane Railway Station East, Thane, Maharashtra 400602 (5XPF+GM Thane)
+                    Beside Thane Railway Station West, Platform No. 1, Thane, Maharashtra 400602 (5XPF+GM Thane)
                   </span>
                 </li>
 
@@ -1625,7 +1625,7 @@ export default function HomePage() {
           <div className="pt-8 border-t border-[#4A0E17]/60 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
             <p>&copy; 2026 Shubharambh Banquet Hall. All rights reserved.</p>
             <p className="text-stone-400">
-              Thane Rly Stn, Maharashtra 400602 · Beside Station East
+              Thane Rly Stn, Platform No. 1, Thane West 400602 · Beside Station West
             </p>
           </div>
         </div>
